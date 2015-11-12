@@ -1,2 +1,2 @@
-# projects-api-js
+# Projects API JavaScript
 JavaScript client library for Projects API
