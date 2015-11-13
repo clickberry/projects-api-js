@@ -1,0 +1,25 @@
+{
+  "name": "projects-api-js",
+  "version": "0.0.1",
+  "description": "JavaScript client library for Projects API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/clickberry/projects-api-js"
+  },
+  "keywords": [
+    "projects",
+    "api",
+    "clickberry",
+    "js"
+  ],
+  "author": "Alexey Melnikov",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/clickberry/projects-api-js/issues"
+  },
+  "homepage": "https://github.com/clickberry/projects-api-js#readme"
+}
