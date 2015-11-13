@@ -55,7 +55,7 @@
           last_id = null;
         }
 
-        last_id = last_id ? '';
+        last_id = last_id || '';
 
         $.ajax({
             url: url + '/all?' + 'top=' + top + '&last=' + last_id,
