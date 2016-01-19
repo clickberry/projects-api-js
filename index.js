@@ -48,6 +48,20 @@
           });
       },
 
+      // List all projects for current user
+      listByUser: function (user_id, fn) {
+        $.ajax({
+            url: url + '/user/' + user_id,
+            type: 'GET'
+          })
+          .done(function(result) {
+            fn(null, result);
+          })
+          .fail(function(jqXHR, textStatus, err) {
+            fn(err);
+          });
+      },
+
       // List all public projects
       listPublic: function (top, last_id, fn) {
         if (!fn) {
