@@ -113,7 +113,22 @@
           .fail(function(jqXHR, textStatus, err) {
             fn(err);
           });
-      }
+      },
+
+      // Update profile info
+      delete: function (id, access_token, fn) {
+        $.ajax({
+            url: url + '/' + id,
+            type: 'DELETE',
+            headers: {'Authorization': 'JWT ' + access_token}
+          })
+          .done(function() {
+            fn(null);
+          })
+          .fail(function(jqXHR, textStatus, err) {
+            fn(err);
+          });
+      }      
     };
   };
 
